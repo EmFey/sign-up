@@ -13,17 +13,42 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
     margin: 0;
 }
 
+.logo-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b003b;
+    opacity: 80%;
+    width: 60vh;
+    color: white;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.logo-credit {
+    display: flex;
+}
+
 .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background: url(bgpic.jpg) no-repeat;
-    width: 50vh;
+    width: 60vh;
     height: 100vh;
+    object-fit: cover;
+    background-position: center;
+    background-size: 90vh;
 }
 
 .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     background-color: white;
     height: 100vh;
