@@ -1,3 +1,18 @@
 :root {
     background-color: #000022;
 }
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.logo {
+    background-image: url(bgpic.jpg);
+}
+
+.form {
+    flex-direction: column;
+}
