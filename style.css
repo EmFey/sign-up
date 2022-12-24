@@ -2,6 +2,7 @@
     --accent-color: #3b003b;
     --custom-margin: 10px;
     --txt-color: white;
+    --custom-padding: 10px;
 }
 
 *{
@@ -29,11 +30,13 @@
     font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: var(--custom-margin);
+    padding: var(--custom-padding);
 }
 
 .logo-credit {
     display: flex;
     color: var(--txt-color);
+    padding: var(--custom-padding);
 }
 
 .logo {
@@ -47,6 +50,7 @@
     object-fit: cover;
     background-position: center;
     background-size: 90vh;
+    padding: var(--custom-padding);
 }
 
 .form {
@@ -56,13 +60,33 @@
     flex-direction: column;
     background-color: var(--txt-color);
     height: 100vh;
+    padding: var(--custom-padding);
+}
+
+.form-stuff {
+    display: flex;
+    flex-direction: column;
+    padding: var(--custom-padding);
 }
 
 .info form {
     margin: var(--custom-margin);
+    padding: var(--custom-padding);
+}
+
+.one, .two, .three {
+    display: flex;
+    flex-direction: row;
 }
 
 button {
     background-color: var(--accent-color);
     color: var(--txt-color);
+    margin: var(--custom-margin);
+    padding: var(--custom-padding);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
