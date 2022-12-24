@@ -1,13 +1,14 @@
 :root {
     --accent-color: #3b003b;
     --custom-margin: 10px;
+    --txt-color: white;
 }
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .content {
@@ -21,23 +22,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #3b003b;
+    background-color: var(--accent-color);
     opacity: 80%;
     width: 60vh;
-    color: white;
-    font-size: xx-large;
+    color: var(--txt-color);
+    font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: var(--custom-margin);
 }
 
 .logo-credit {
     display: flex;
+    color: var(--txt-color);
 }
 
 .logo {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     background: url(bgpic.jpg) no-repeat;
     width: 60vh;
@@ -50,12 +52,17 @@
 .form {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--txt-color);
     height: 100vh;
 }
 
 .info form {
     margin: var(--custom-margin);
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--txt-color);
 }
