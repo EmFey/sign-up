@@ -1,5 +1,12 @@
 :root {
-    background-color: #000022;
+    --accent-color: #3b003b;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .content {
@@ -7,12 +14,17 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    margin: 0;
 }
 
 .logo {
-    background-image: url(bgpic.jpg);
+    background: url(bgpic.jpg) no-repeat;
+    width: 50vh;
+    height: 100vh;
 }
 
 .form {
     flex-direction: column;
+    background-color: white;
+    height: 100vh;
 }
