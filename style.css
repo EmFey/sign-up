@@ -1,5 +1,6 @@
 :root {
     --accent-color: #3b003b;
+    --custom-margin: 10px;
 }
 
 *{
@@ -26,6 +27,7 @@
     color: white;
     font-size: xx-large;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: var(--custom-margin);
 }
 
 .logo-credit {
@@ -52,4 +54,8 @@
     flex-direction: column;
     background-color: white;
     height: 100vh;
+}
+
+.info form {
+    margin: var(--custom-margin);
 }
