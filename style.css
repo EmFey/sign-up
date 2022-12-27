@@ -79,7 +79,7 @@
 }
 
 input {
-    border: 1px solid var(--accent-color);
+    border: 1.5px solid var(--accent-color);
     padding: 3px;
     width: 200px;
 }
@@ -104,6 +104,7 @@ input:invalid {
 
 label {
     font-size: small;
+    font-weight: bold;
 }
 
 .one, .two, .three {
