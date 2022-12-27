@@ -88,6 +88,14 @@ input:focus {
     padding: 5px;
 }
 
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
 .info {
     padding: var(--custom-padding);
 }
