@@ -1,4 +1,5 @@
 :root {
+    --page-div: 65vh;
     --accent-color: #3b003b;
     --custom-margin: 10px;
     --txt-color: white;
@@ -24,7 +25,7 @@
     justify-content: center;
     background-color: var(--accent-color);
     opacity: 80%;
-    width: 60vh;
+    width: var(--page-div);
     color: var(--txt-color);
     font-size: 30px;
     font-weight: bolder;
@@ -46,7 +47,7 @@
     justify-content: space-between;
     flex-direction: column;
     background: url(bgpic.jpg) no-repeat;
-    width: 60vh;
+    width: var(--page-div);
     height: 100vh;
     object-fit: cover;
     background-position: center;
@@ -77,13 +78,13 @@
     height: 100vh;
 }
 
-input[type=text], input[type=email], input[type=number], input[type=password] {
+input {
     border: 1px solid var(--accent-color);
     padding: 3px;
     width: 200px;
 }
 
-input[type=text]:focus, input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
+input:focus {
     padding: 5px;
 }
 
