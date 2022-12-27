@@ -86,6 +86,8 @@ input {
 
 input:focus {
     padding: 5px;
+    box-shadow: 0px 2px 0px var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 
 input:invalid {
