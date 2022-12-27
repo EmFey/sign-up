@@ -75,18 +75,18 @@
         let pass = document.getElementById("pass");
         let vPass = document.getElementById("pass2");
 
-        // inputs = document.getElementsByTagName('input');
-        // for (i = 0; i < inputs.length; i++) {
-        //     inputs[i].style.borderColor = "black";
-        // }
-
-        if (vPass.value != pass.value) {
-            pass.style.borderColor = "red";
-            vPass.style.borderColor = "red";
-        } else {
-            pass.style.borderColor = "green";
-            vPass.style.borderColor = "green";
+        inputs = document.getElementsByTagName('input');
+        for (i = 0; i < inputs.length; i++) {
+            inputs[i].style.borderColor = "black";
         }
+
+        // if (vPass.value != pass.value) {
+        //     pass.style.borderColor = "red";
+        //     vPass.style.borderColor = "red";
+        // } else {
+        //     pass.style.borderColor = "green";
+        //     vPass.style.borderColor = "green";
+        // }
     </script>
 </body>
 </html>
