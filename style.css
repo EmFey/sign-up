@@ -119,6 +119,11 @@ button:hover {
     background-color: var(--txt-color);
 }
 
+button:active {
+    color: var(--txt-color);
+    background-color: var(--accent-color);
+}
+
 a {
     text-decoration: none;
     color: var(--accent-color);
