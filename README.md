@@ -24,5 +24,5 @@ This project is not done
 The biggest lesson I learnt was that everything I learnt so far can do almost everything
 
 ## LIVE
-https://github.com/EmFey/sign-up
+https://emfey.github.io/sign-up/
 
