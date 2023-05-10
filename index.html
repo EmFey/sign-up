@@ -57,6 +57,7 @@
                         <div class="form-stuff">
                             <label for="pass2">CONFIRM PASSWORD</label>
                             <input type="password" name="pass2" id="pass2" minlength="3" maxlength="20" required>
+                            <span class="error-message hidden" id="pass-error">Not Matched</span>
                         </div>
                     </div>
                     <div class="form-btn">
@@ -88,13 +89,14 @@
         pass.addEventListener("input", function () {
             pass.classList.remove("error");
             vPass.classList.remove("error");
-            document.querySelector(".error-message").classList.remove("visible");
         });
 
         vPass.addEventListener("input", function () {
             pass.classList.remove("error");
             vPass.classList.remove("error");
-            document.querySelector(".error-message").classList.remove("visible");
+            document.querySelector(".error-message").classList.remove("hidden");
+            document.querySelector(".error-message").classList.add("visible");
+
         });
     </script>
   </body>
