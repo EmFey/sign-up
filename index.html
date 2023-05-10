@@ -27,7 +27,7 @@
             </div>
             <div class="info">
                 <h3>Let's do this!</h3>
-                <form action="http://httpbin.org/post" method="post">
+                <form id="signup-form" action="http://example.com/signup" method="post">
                     <div class="one">
                         <div class="form-stuff">
                             <label for="fname">FIRST NAME</label>
@@ -46,7 +46,7 @@
                         </div>
                         <div class="form-stuff">
                             <label for="pNumber">PHONE NUMBER</label>
-                            <input type="number" name="pNumber" id="pNumber" required>
+                            <input type="tel" name="pNumber" id="pNumber" required>
                         </div>
                     </div>
                     <div class="three">
@@ -70,23 +70,32 @@
         </div>
     </div>
 
+
     <script>
-        // let inputs, i;
         let pass = document.getElementById("pass");
         let vPass = document.getElementById("pass2");
+        let form = document.querySelector("form");
 
-        // inputs = document.getElementsByTagName('input');
-        // for (i = 0; i < inputs.length; i++) {
-        //     inputs[i].style.borderColor = "black";
-        // }
+        form.addEventListener("submit", function (event) {
+            if (vPass.value != pass.value) {
+                event.preventDefault();
+                pass.classList.add("error");
+                vPass.classList.add("error");
+                document.querySelector(".error-message").classList.add("visible");
+            }
+        });
 
-        if (vPass.value != pass.value) {
-            pass.style.borderColor = "red";
-            vPass.style.borderColor = "red";
-        } else {
-            pass.style.borderColor = "green";
-            vPass.style.borderColor = "green";
-        }
+        pass.addEventListener("input", function () {
+            pass.classList.remove("error");
+            vPass.classList.remove("error");
+            document.querySelector(".error-message").classList.remove("visible");
+        });
+
+        vPass.addEventListener("input", function () {
+            pass.classList.remove("error");
+            vPass.classList.remove("error");
+            document.querySelector(".error-message").classList.remove("visible");
+        });
     </script>
-</body>
+  </body>
 </html>
