@@ -85,6 +85,7 @@ form label {
     padding: var(--custom-padding);
     font-weight: bolder;
     height: 100vh;
+    opacity: 80%;
 }
 
 form input[type="text"],
@@ -106,11 +107,11 @@ form input[type="password"]:focus {
 }
 
 input:valid {
-    border-color: green;
+    border: 3px solid green;
 }
 
 input:invalid {
-    border-color: red;
+    border: 3px solid red;
 }
 
 .info {
@@ -167,12 +168,16 @@ a {
     font-weight: bolder;
     width: 100%;
     height: 100%;
+    opacity: 80%;
 }
 
-form .error-message {
+.error-message {
     color: #dc3545;
     margin-top: 0.5rem;
-    display: none;
+}
+
+.match {
+    color: #078107;
 }
 
 .visible {

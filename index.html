@@ -71,7 +71,6 @@
         </div>
     </div>
 
-
     <script>
         let pass = document.getElementById("pass");
         let vPass = document.getElementById("pass2");
@@ -82,7 +81,12 @@
                 event.preventDefault();
                 pass.classList.add("error");
                 vPass.classList.add("error");
+                document.querySelector(".error-message").textContent = "Passwords do not match.";
                 document.querySelector(".error-message").classList.add("visible");
+            } else {
+                document.querySelector(".error-message").classList.add("match");
+                document.querySelector(".error-message").textContent = "Matched";
+                document.querySelector(".error-message").classList.remove("visible");
             }
         });
 
@@ -95,9 +99,10 @@
             pass.classList.remove("error");
             vPass.classList.remove("error");
             document.querySelector(".error-message").classList.remove("hidden");
+            document.querySelector(".error-message").textContent = "";
             document.querySelector(".error-message").classList.add("visible");
-
         });
     </script>
+
   </body>
 </html>
